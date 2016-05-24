@@ -2,7 +2,7 @@
 
 juke.directive('myPlayer', function(PlayerFactory){
 	return {
-		restrict: 'A',
+		restrict: 'EA',
 		templateUrl: 'js/player/player-template.html',
 		link: function(scope, element, attr){
 			angular.extend(scope, PlayerFactory); // copy props from param2 to param1
